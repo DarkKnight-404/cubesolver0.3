@@ -1,0 +1,8 @@
+Check your algorithms i think there is a little error i have made a simplified method for commands a SubCommands sections are what makes it unique
+it is basically a list of commands sequentially not everything is simplified 
+check your codes and do the remaining work 
+
+
+working fine 
+
+work in progress ..............................

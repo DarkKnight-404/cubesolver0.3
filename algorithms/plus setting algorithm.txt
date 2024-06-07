@@ -1,0 +1,52 @@
+plus creating algorithm 
+
+
+up:
+
+    a)(1)-> uc uc fc fc
+    b)(3)-> ua fc fc
+    c)(7)-> fc fc 
+    d)(5)-> uc fc fc
+    
+
+right:
+
+    a)(3)-> fc
+    b)(5)-> rc rc fc ra ra
+    c)(7)-> rc fc ra
+    d)(1)-> ra fc rc
+
+
+left: 
+
+    a)(3)-> lc lc fa la la
+    b)(7)-> lc fa la
+    c)(5)-> fa
+    d)(1)-> la fa lc
+
+
+down:
+
+    a)(1)-> - 
+    b)(3)-> dc fc da fa
+    c)(5)-> da fc dc fa 
+    d)(7)-> dc dc fc da da fa
+
+
+back:
+
+    a)(3)-> ra uc rc fc fc
+    b)(5)-> la ua lc fc fc 
+    c)(7)-> da da fc dc dc fa
+    d)(1)-> uc uc fc fc 
+
+
+current:
+
+    a)(1)-> ua ra fc rc
+    b)(3)-> lc ua la fc fc 
+    c)(5)-> rc uc ra fc fc 
+    d)(7)-> fa rc uc ra fc fc
+
+
+

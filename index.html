@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html body{
+            /* overflow: hidden; */
+            background-color: antiquewhite;
+        }
+        .cublets {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 3px solid;
+            background-color: red;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        #cubeCommands{
+            overflow: hidden;
+            background-color: rgb(2, 1, 0);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #CommandTf{
+            background-color: antiquewhite;
+            position: absolute;
+            left: 1400px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            /* text-size-adjust: 10px; */
+            font-size: 80px;
+            align-content: center;
+            text-align: center;
+            border: 3px solid;
+            cursor:pointer;
+        }
+
+        /* added */
+        #colorSetter{
+            display: flex;
+            position: fixed;
+            left: 650px;
+            top: 10px;
+        }
+        .colours{
+            border: 3px solid;
+            width: 100px;
+            height: 100px;  
+            margin-left: 10px;          
+        }
+
+        #colOne{
+            background-color: blue;
+        }
+        #colTwo{
+            background-color: red;
+        }
+        #colThree{
+            background-color: green;
+        }
+        #colFour{
+            background-color: orange;
+        }
+        #colFive{
+            background-color: yellow;
+        }
+        #colSix{
+            background-color: white
+        }
+        #myButton{
+            width: 100px;
+            height: 100px;
+            top: 0px;
+            left: 0px;
+        }
+
+        #shiftMain{
+            width: 90px;
+            height: 30px;
+            background-color: skyblue;
+            border-radius: 10px;
+            position: fixed;
+            left: 1400px;
+            top: 700px;
+        }
+        #shiftMain a{
+            width: 90px;
+            height: 30px;
+            text-decoration: none;
+            text-decoration-color: black;
+        }
+        /* added close */
+
+    </style>
+</head>
+
+<body>
+
+    <!-- added -->
+    <nav id="colorSetter">
+        <div class="colours" id="colOne" onclick="grabCol('blue')"></div>
+        <div class="colours" id="colTwo" onclick="grabCol('red')"></div>
+        <div class="colours" id="colThree" onclick="grabCol('green')"></div>
+        <div class="colours" id="colFour" onclick="grabCol('orange')"></div>
+        <div class="colours" id="colFive" onclick="grabCol('yellow')"></div>
+        <div class="colours" id="colSix" onclick="grabCol('white')"></div>
+    </nav>
+    <!-- added close -->
+
+
+    <!-- <input type="text" name="commands" id="cubeCommand" width="200px" height="50px" onclick="operateCommand()">
+
+    <div id="CommandTf" onclick="autoCommOperator()">...</div> -->
+
+    <div class="cublets" id="_00s" onclick="setColor('_00s')">one</div>
+    <div class="cublets" id="_01s" onclick="setColor('_01s')">two</div>
+    <div class="cublets" id="_02s" onclick="setColor('_02s')">three</div>
+
+    <div class="cublets" id="_03s" onclick="setColor('_03s')">four</div>
+    <div class="cublets" id="_04s" onclick="setColor('_04s')">five</div>
+    <div class="cublets" id="_05s" onclick="setColor('_05s')">six</div>
+
+    <div class="cublets" id="_06s" onclick="setColor('_06s')">seven</div>
+    <div class="cublets" id="_07s" onclick="setColor('_07s')">eight</div>
+    <div class="cublets" id="_08s" onclick="setColor('_08s')">nine</div>
+
+
+
+    <div class="cublets" id="_10s" onclick="setColor('_10s')">one</div>
+    <div class="cublets" id="_11s" onclick="setColor('_11s')">two</div>
+    <div class="cublets" id="_12s" onclick="setColor('_12s')">three</div>
+
+    <div class="cublets" id="_13s" onclick="setColor('_13s')">four</div>
+    <div class="cublets" id="_14s" onclick="setColor('_14s')">five</div>
+    <div class="cublets" id="_15s" onclick="setColor('_15s')">six</div>
+
+    <div class="cublets" id="_16s" onclick="setColor('_16s')">seven</div>
+    <div class="cublets" id="_17s" onclick="setColor('_17s')">eight</div>
+    <div class="cublets" id="_18s" onclick="setColor('_18s')">nine</div>
+
+
+
+    <div class="cublets" id="_20s" onclick="setColor('_20s')">one</div>
+    <div class="cublets" id="_21s" onclick="setColor('_21s')">two</div>
+    <div class="cublets" id="_22s" onclick="setColor('_22s')">three</div>
+
+    <div class="cublets" id="_23s" onclick="setColor('_23s')">four</div>
+    <div class="cublets" id="_24s" onclick="setColor('_24s')">five</div>
+    <div class="cublets" id="_25s" onclick="setColor('_25s')">six</div>
+
+    <div class="cublets" id="_26s" onclick="setColor('_26s')">seven</div>
+    <div class="cublets" id="_27s" onclick="setColor('_27s')">eight</div>
+    <div class="cublets" id="_28s" onclick="setColor('_28s')">nine</div>
+
+
+
+    <div class="cublets" id="_30s" onclick="setColor('_30s')">one</div>
+    <div class="cublets" id="_31s" onclick="setColor('_31s')">two</div>
+    <div class="cublets" id="_32s" onclick="setColor('_32s')">three</div>
+
+    <div class="cublets" id="_33s" onclick="setColor('_33s')">four</div>
+    <div class="cublets" id="_34s" onclick="setColor('_34s')">five</div>
+    <div class="cublets" id="_35s" onclick="setColor('_35s')">six</div>
+
+    <div class="cublets" id="_36s" onclick="setColor('_36s')">seven</div>
+    <div class="cublets" id="_37s" onclick="setColor('_37s')">eight</div>
+    <div class="cublets" id="_38s" onclick="setColor('_38s')">nine</div>
+
+
+
+    <div class="cublets" id="_40s" onclick="setColor('_40s')">one</div>
+    <div class="cublets" id="_41s" onclick="setColor('_41s')">two</div>
+    <div class="cublets" id="_42s" onclick="setColor('_42s')">three</div>
+
+    <div class="cublets" id="_43s" onclick="setColor('_43s')">four</div>
+    <div class="cublets" id="_44s" onclick="setColor('_44s')">five</div>
+    <div class="cublets" id="_45s" onclick="setColor('_45s')">six</div>
+
+    <div class="cublets" id="_46s" onclick="setColor('_46s')">seven</div>
+    <div class="cublets" id="_47s" onclick="setColor('_47s')">eight</div>
+    <div class="cublets" id="_48s" onclick="setColor('_48s')">nine</div>
+
+
+
+    <div class="cublets" id="_50s" onclick="setColor('_50s')">one</div>
+    <div class="cublets" id="_51s" onclick="setColor('_51s')">two</div>
+    <div class="cublets" id="_52s" onclick="setColor('_52s')">three</div>
+
+    <div class="cublets" id="_53s" onclick="setColor('_53s')">four</div>
+    <div class="cublets" id="_54s" onclick="setColor('_54s')">five</div>
+    <div class="cublets" id="_55s" onclick="setColor('_55s')">six</div>
+
+    <div class="cublets" id="_56s" onclick="setColor('_56s')">seven</div>
+    <div class="cublets" id="_57s" onclick="setColor('_57s')">eight</div>
+    <div class="cublets" id="_58s" onclick="setColor('_58s')">nine</div>
+
+
+    
+    <button id="shiftMain">
+        <a href="algorithms\index.html" onclick="liveArrSimulator()">Enter</a>
+    </button>
+    <!-- <button onclick="liveArrSimulator()" id="myButton"></button> -->
+    
+</body>
+
+<script type="module" src="ColorSelector.js"></script>
+<script type="module" src="CubletColor.js"></script>
+<script type="module" src="RealCubeCol.js"></script>
+<!-- <script type="module" src="currentCube.js"></script>
+<script type="module" src="Algorithm.js"></script>
+<script type="module" src="SubCommands.js"></script> -->
+
+</html>

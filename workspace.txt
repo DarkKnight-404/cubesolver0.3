@@ -1,0 +1,82 @@
+let redX = 0;
+    let redY = 0;
+    setPos(320 + redX, 350 + redY, '_00s');
+    setPos(420 + redX, 350 + redY, '_01s');
+    setPos(520 + redX, 350 + redY, '_02s');
+    setPos(320 + redX, 450 + redY, '_03s');
+    setPos(420 + redX, 450 + redY, '_04s');
+    setPos(520 + redX, 450 + redY, '_05s');
+    setPos(320 + redX, 550 + redY, '_06s');
+    setPos(420 + redX, 550 + redY, '_07s');
+    setPos(520 + redX, 550 + redY, '_08s');
+
+    let greenX = 310;
+    let greenY = 0;
+    setPos(320 + greenX, 350 + greenY, '_10s');
+    setPos(420 + greenX, 350 + greenY, '_11s');
+    setPos(520 + greenX, 350 + greenY, '_12s');
+    setPos(320 + greenX, 450 + greenY, '_13s');
+    setPos(420 + greenX, 450 + greenY, '_14s');
+    setPos(520 + greenX, 450 + greenY, '_15s');
+    setPos(320 + greenX, 550 + greenY, '_16s');
+    setPos(420 + greenX, 550 + greenY, '_17s');
+    setPos(520 + greenX, 550 + greenY, '_18s');
+
+    let orangeX = 620;
+    let orangeY = 0;
+    setPos(320 + orangeX, 350 + orangeY, '_20s');
+    setPos(420 + orangeX, 350 + orangeY, '_21s');
+    setPos(520 + orangeX, 350 + orangeY, '_22s');
+    setPos(320 + orangeX, 450 + orangeY, '_23s');
+    setPos(420 + orangeX, 450 + orangeY, '_24s');
+    setPos(520 + orangeX, 450 + orangeY, '_25s');
+    setPos(320 + orangeX, 550 + orangeY, '_26s');
+    setPos(420 + orangeX, 550 + orangeY, '_27s');
+    setPos(520 + orangeX, 550 + orangeY, '_28s');
+
+    let blueX = -310;
+    let blueY = 0;
+    setPos(320 + blueX, 350 + blueY, '_30s');
+    setPos(420 + blueX, 350 + blueY, '_31s');
+    setPos(520 + blueX, 350 + blueY, '_32s');
+    setPos(320 + blueX, 450 + blueY, '_33s');
+    setPos(420 + blueX, 450 + blueY, '_34s');
+    setPos(520 + blueX, 450 + blueY, '_35s');
+    setPos(320 + blueX, 550 + blueY, '_36s');
+    setPos(420 + blueX, 550 + blueY, '_37s');
+    setPos(520 + blueX, 550 + blueY, '_38s');
+
+    let yellowX = 0;
+    let yellowY = -310;
+    setPos(320 + yellowX, 350 + yellowY, '_40s');
+    setPos(420 + yellowX, 350 + yellowY, '_41s');
+    setPos(520 + yellowX, 350 + yellowY, '_42s');
+    setPos(320 + yellowX, 450 + yellowY, '_43s');
+    setPos(420 + yellowX, 450 + yellowY, '_44s');
+    setPos(520 + yellowX, 450 + yellowY, '_45s');
+    setPos(320 + yellowX, 550 + yellowY, '_46s');
+    setPos(420 + yellowX, 550 + yellowY, '_47s');
+    setPos(520 + yellowX, 550 + yellowY, '_48s');
+
+    let whiteX = 0;
+    let whiteY = 310;
+    setPos(320 + whiteX, 350 + whiteY, '_50s');
+    setPos(420 + whiteX, 350 + whiteY, '_51s');
+    setPos(520 + whiteX, 350 + whiteY, '_52s');
+    setPos(320 + whiteX, 450 + whiteY, '_53s');
+    setPos(420 + whiteX, 450 + whiteY, '_54s');
+    setPos(520 + whiteX, 450 + whiteY, '_55s');
+    setPos(320 + whiteX, 550 + whiteY, '_56s');
+    setPos(420 + whiteX, 550 + whiteY, '_57s');
+    setPos(520 + whiteX, 550 + whiteY, '_58s');
+
+
+
+    let boardBluePrint = [
+    ["_00","_32","_46"],["_01","_47"],["_02","_48","_10"],["_03","_35"],["_04"],["_05","_13"],["_06","_50","_38"],["_07","_51"],["_08","_16","_52"]
+    ["_10","_02","_48"],["_11","_45"],["_12","_42","_20"],["_13","_05"],["_14"],["_15","_23"],["_16","_52","_08"],["_17","_55"],["_18","_26","_58"]
+    ["_20","_12","_42"],["_21","_41"],["_22","_40","_30"],["_23","_15"],["_24"],["_25","_33"],["_26","_58","_18"],["_27","_57"],["_28","_36","_56"]
+    ["_30","_22","_40"],["_31","_43"],["_32","_46","_00"],["_33","_25"],["_34"],["_35","_03"],["_36","_56","_28"],["_37","_53"],["_38","_06","_50"]
+    ["_40","_30","_22"],["_41","_21"],["_42","_20","_12"],["_43","_31"],["_44"],["_45","_11"],["_46","_00","_32"],["_47","_01"],["_48","_10","_02"]
+    ["_50","_38","_06"],["_51","_07"],["_52","_98","_16"],["_53","_37"],["_54"],["_55","_17"],["_56","_28","_36"],["_57","_27"],["_58","_18","_26"]
+]

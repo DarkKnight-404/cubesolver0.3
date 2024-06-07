@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html body{
+            /* overflow: hidden; */
+            background-color: antiquewhite;
+        }
+        .cublets {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 3px solid;
+            background-color: red;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        #cubeCommand{
+            overflow: hidden;
+            /* background-color: rgb(2, 1, 0); */
+            position: fixed;
+            
+        }
+        #CommandTf{
+            background-color: rgb(182, 119, 38);
+            position: fixed;
+            left: 1400px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            /* text-size-adjust: 10px; */
+            font-size: 80px;
+            align-content: center;
+            text-align: center;
+            border: 3px solid;
+            cursor:pointer;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    
+
+    <div class="cublets" id="_00" onclick="update()">one</div>
+    <div class="cublets" id="_01">two</div>
+    <div class="cublets" id="_02">three</div>
+
+    <div class="cublets" id="_03">four</div>
+    <div class="cublets" id="_04">five</div>
+    <div class="cublets" id="_05">six</div>
+
+    <div class="cublets" id="_06">seven</div>
+    <div class="cublets" id="_07">eight</div>
+    <div class="cublets" id="_08">nine</div>
+
+
+
+    <div class="cublets" id="_10">one</div>
+    <div class="cublets" id="_11">two</div>
+    <div class="cublets" id="_12">three</div>
+
+    <div class="cublets" id="_13">four</div>
+    <div class="cublets" id="_14">five</div>
+    <div class="cublets" id="_15">six</div>
+
+    <div class="cublets" id="_16">seven</div>
+    <div class="cublets" id="_17">eight</div>
+    <div class="cublets" id="_18">nine</div>
+
+
+
+    <div class="cublets" id="_20">one</div>
+    <div class="cublets" id="_21">two</div>
+    <div class="cublets" id="_22">three</div>
+
+    <div class="cublets" id="_23">four</div>
+    <div class="cublets" id="_24">five</div>
+    <div class="cublets" id="_25">six</div>
+
+    <div class="cublets" id="_26">seven</div>
+    <div class="cublets" id="_27">eight</div>
+    <div class="cublets" id="_28">nine</div>
+
+
+
+    <div class="cublets" id="_30">one</div>
+    <div class="cublets" id="_31">two</div>
+    <div class="cublets" id="_32">three</div>
+
+    <div class="cublets" id="_33">four</div>
+    <div class="cublets" id="_34">five</div>
+    <div class="cublets" id="_35">six</div>
+
+    <div class="cublets" id="_36">seven</div>
+    <div class="cublets" id="_37">eight</div>
+    <div class="cublets" id="_38">nine</div>
+
+
+
+    <div class="cublets" id="_40">one</div>
+    <div class="cublets" id="_41">two</div>
+    <div class="cublets" id="_42">three</div>
+
+    <div class="cublets" id="_43">four</div>
+    <div class="cublets" id="_44">five</div>
+    <div class="cublets" id="_45">six</div>
+
+    <div class="cublets" id="_46">seven</div>
+    <div class="cublets" id="_47">eight</div>
+    <div class="cublets" id="_48">nine</div>
+
+
+
+    <div class="cublets" id="_50">one</div>
+    <div class="cublets" id="_51">two</div>
+    <div class="cublets" id="_52">three</div>
+
+    <div class="cublets" id="_53">four</div>
+    <div class="cublets" id="_54">five</div>
+    <div class="cublets" id="_55">six</div>
+
+    <div class="cublets" id="_56">seven</div>
+    <div class="cublets" id="_57">eight</div>
+    <div class="cublets" id="_58">nine</div>
+
+    <input type="text" name="commands" id="cubeCommand" width="200px" height="50px" onclick="operateCommand()">
+
+    <button id="CommandTf" onclick="autoCommOperator()">...</button>
+
+</body>
+
+<script type="module" src="Main.js"></script>
+<script type="module" src="CurrentCube.js"></script>
+<script type="module" src="Algorithm.js"></script>
+<script type="module" src="SubCommands.js"></script>
+<!-- <script type="module" src="../RealCubeCol.js"></script> -->
+
+</html>

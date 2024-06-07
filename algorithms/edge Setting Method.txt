@@ -1,0 +1,49 @@
+edge Setting Method
+
+up:
+
+	a)(0)-> uc uc 
+	b)(2)-> uc
+	c)(6)-> ua
+	d)(8)-> -
+	
+	+= rc uc uc ra ua rc uc ra
+
+right:
+
+	a)(0)-> rc uc ra 
+	b)(2)-> uc uc rc ua ra 
+	c)(6)-> rc uc ra ua rc uc ra ua 
+	d)(8)-> ra uc uc rc rc ua ra
+	
+left:
+
+	a)(0)-> ua ua rc uc ra ua 
+	b)(2)-> rc ua ra
+	c)(6)-> la uc lc uc rc uc ra ua 
+	d)(8)-> rc lc ua la ra
+
+down:
+
+	a)(0)-> lc ua la rc uc ra ua
+	b)(2)-> -
+	c)(6)-> rc la uc uc lc ra
+	d)(8)-> ra ua rc ua ua rc uc ra ua
+
+back:
+
+	a)(0)-> uc rc uc ra ua
+	b)(2)-> rc uc uc ra 
+	c)(6)-> ra uc uc rc ua rc uc uc ra ua rc uc ra 
+	d)(8)-> la rc ua ua ra lc
+
+current:
+	
+	a)(0)-> ua rc uc ra ua
+	b)(2)-> uc rc ua ra
+	c)(6)-> lc ua la rc uc ra ua rc uc ra ua rc uc ra ua
+	d)(8)-> fa ua ua fc rc uc uc ra
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------

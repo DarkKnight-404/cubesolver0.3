@@ -1,5 +1,14 @@
 import RealCubeCol from "./RealCubeCol.js";
 
+// mobile changes 
+if (navigator.userAgent.match(/Mobile/)) {
+    let arr = document.getElementsByClassName("colours");
+    for(let i=0;i<arr.length;i++){
+        arr[i].style.width = "50px";
+        arr[i].style.height = "50px";
+    }
+}
+
 setMySudoCube();
 let realCube = new RealCubeCol();
 

@@ -2,6 +2,7 @@ import RealCubeCol from "./RealCubeCol.js";
 
 // mobile changes 
 if (navigator.userAgent.match(/Mobile/)) {
+    console.log("in mobile");
     let arr = document.getElementsByClassName("colours");
     for(let i=0;i<arr.length;i++){
         arr[i].style.width = "50px";

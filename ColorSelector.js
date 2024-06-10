@@ -9,6 +9,9 @@ if (navigator.userAgent.match(/Mobile/)) {
         arr[i].style.height = "50px";
     }
 }
+else{
+    console.log("in desktop");
+}
 
 setMySudoCube();
 let realCube = new RealCubeCol();

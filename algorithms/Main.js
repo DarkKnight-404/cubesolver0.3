@@ -4,6 +4,37 @@ import CurrentCube from "./CurrentCube.js";
 import SubCommand from "./SubCommands.js";
 
 
+
+// mobile changes 
+if (navigator.userAgent.match(/Mobile/)) {
+    console.log("adding enter button in the mobile");
+    let mobileEnter = document.createElement("button");
+    mobileEnter.style.width = "40px"
+    mobileEnter.style.height = "20px"
+    mobileEnter.style.position = "relative";
+    mobileEnter.style.left = "0px"
+    mobileEnter.style.top = "30px"
+    mobileEnter.style.backgroundColor = "blue";
+    document.body.appendChild(mobileEnter);
+
+    mobileEnter.onclick = function(){
+        let command = (document.getElementById("cubeCommand").value);
+
+        commandsWriter(command);
+
+        if (command == "alg") {
+            commandController();
+        }
+
+        command.value = "";
+
+    }
+
+    console.log(mobileEnter);
+}
+
+
+
 // let algori = new Algorithm();
 // console.log(algori.genCommList("rc uc ra ua ")); 
 let scrambledCube;
